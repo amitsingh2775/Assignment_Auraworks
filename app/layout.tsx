@@ -19,10 +19,9 @@ export default function RootLayout({
         <title>{metadata.title?.toString() ?? "Default Title"}</title>
         <meta name="description" content={metadata.description?.toString() ?? "Default Description"} />
       </head>
-      <body className="flex flex-col min-h-screen bg-gray-200 ">
+      <body className="flex flex-col min-h-screen bg-gray-200">
         <Header />
         <div className="flex flex-1 h-[calc(100vh-64px)]">
-          {/* Assuming Header height is 64px, adjust if different */}
           <Sidebar />
           <main className="flex-1 overflow-y-auto">
             {children}
